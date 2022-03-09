@@ -12,15 +12,15 @@
     <!-- 中间栏 -->
     <div class="entryItems">
       <div>
-<router-link to="/CovArea">
-            <div>
-          <img
-            src="https://img1.dxycdn.com/2021/0804/220/9442938684169526943-22.png"
-            alt=""
-          />
-        </div>
-        <p>风险地区</p>
-</router-link>
+        <router-link to="/CovArea">
+          <div>
+            <img
+              src="https://img1.dxycdn.com/2021/0804/220/9442938684169526943-22.png"
+              alt=""
+            />
+          </div>
+          <p>风险地区</p>
+        </router-link>
       </div>
       <div>
         <a href="https://dxys-mall.dxy.com/client/page?name=ddhsjc"
@@ -34,32 +34,44 @@
         >
       </div>
       <div>
-        <div>
-          <img
-            src="https://img1.dxycdn.com/2021/0804/827/1742938684169526943-22.png"
-            alt=""
-          />
-        </div>
-        <p>防疫物资</p>
+        <router-link to="/covItems">
+          <div>
+            <img
+              src="https://img1.dxycdn.com/2021/0804/827/1742938684169526943-22.png"
+              alt=""
+            />
+          </div>
+          <p>防疫物资</p>
+        </router-link>
       </div>
       <div>
-        <div>
+<router-link to="/outPolicy">
+          <div>
           <img
             src="https://img1.dxycdn.com/2021/0804/239/7448668684169526943-22.png"
             alt=""
           />
         </div>
         <p>出行政策</p>
+</router-link>
       </div>
     </div>
     <!-- 全国疫情数量统计-->
     <conNum :covNums="covNums"></conNum>
+    <!-- 地图 -->
+    <chinaMap></chinaMap>
+    <!-- 世界地图 -->
+    <wordMap></wordMap>
+    <vueSwiper></vueSwiper>
   </div>
 </template>
 
 <script>
 import conInfo from "./convInfo/conInfo.vue";
 import conNum from "./convInfo/covNum.vue";
+import chinaMap from "./myEcharts/chinaMap.vue";
+import wordMap from "./myEcharts/worldMap.vue";
+import vueSwiper from "./swipers/index.vue";
 //导入api数据
 import api from "@/api/index";
 export default {
@@ -119,11 +131,14 @@ export default {
   components: {
     conInfo,
     conNum,
+    chinaMap,
+    wordMap,
+    vueSwiper,
   },
 };
 </script>
 
-<style lang='less'>
+<style lang='less' scoped>
 .topImg {
   background-color: #363fd9;
 }
