@@ -86,7 +86,7 @@ export default {
     align-items: center;
   }
   .active {
-    background: rgb(17, 44, 197);
+    background: #dbe4ff
   }
 }
 </style>
