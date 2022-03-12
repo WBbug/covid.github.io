@@ -124,8 +124,6 @@ export default {
       for (let key in this.covNums) {
         this.covNums[key] = res.data.newslist[0].desc[key];
       }
-      console.log(this.covDesc);
-      console.log(this.covNums);
     });
   },
   components: {

@@ -15,7 +15,7 @@ const api = {
     getCityData(city_name){
         //md5加密获得参数
         let sign  = md5('appid14558city_name'+city_name+'formatjson96efdcd019ecda94dfd13561baf95e0f')
-        return axios.get(base.cityData+'format=json&appid=14558&city_name='+city_name+'&sign='+sign)//base.baseUrl+
+        return axios.get(base.baseUrl+base.cityData+'format=json&appid=14558&city_name='+city_name+'&sign='+sign)//base.baseUrl+
     },
     getSwiperWrap(){
        return axios.get(base.getSwiper)
