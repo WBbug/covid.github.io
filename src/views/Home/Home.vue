@@ -1,12 +1,10 @@
 <template>
   <div class="home">
     <!-- 头部图片 -->
-    <img
-      class="topImg"
-      width="100%"
-      src="https://image.uc.cn/s/uae/g/1y/broccoli/pneumonia/index/resources/png/logo.b5c1070f03dbaa1382e7f0067074c10e.png"
-      alt=""
-    />
+
+    <div class="top">
+      <a href="https://github.com/WBbug/covidnews"> <span>查看源码</span></a>
+    </div>
     <!-- 疫情信息 -->
     <conInfo :covDesc="covDesc" :covNews="covNews"></conInfo>
     <!-- 中间栏 -->
@@ -45,15 +43,15 @@
         </router-link>
       </div>
       <div>
-<router-link to="/outPolicy">
+        <router-link to="/outPolicy">
           <div>
-          <img
-            src="https://img1.dxycdn.com/2021/0804/239/7448668684169526943-22.png"
-            alt=""
-          />
-        </div>
-        <p>出行政策</p>
-</router-link>
+            <img
+              src="https://img1.dxycdn.com/2021/0804/239/7448668684169526943-22.png"
+              alt=""
+            />
+          </div>
+          <p>出行政策</p>
+        </router-link>
       </div>
     </div>
     <!-- 全国疫情数量统计-->
@@ -63,6 +61,7 @@
     <!-- 世界地图 -->
     <wordMap></wordMap>
     <vueSwiper></vueSwiper>
+    <!-- 下面固定打开源码地址 -->
   </div>
 </template>
 
@@ -137,6 +136,7 @@ export default {
 </script>
 
 <style lang='less' scoped>
+
 .topImg {
   background-color: #363fd9;
 }
@@ -151,6 +151,22 @@ export default {
       width: 0.8rem;
       height: 0.8rem;
     }
+  }
+}
+.top {
+  padding-top: 20%;
+  width: 100%;
+  background: url(https://image.uc.cn/s/uae/g/1y/broccoli/pneumonia/index/resources/png/logo.b5c1070f03dbaa1382e7f0067074c10e.png);
+  background-color: #363fd9;
+  background-size: cover;
+  a{
+    border: 0.005rem solid hsla(0,0%,100%,.38);
+    border-radius: 0.12rem;
+        padding: 0 0.1rem;
+    color: #fff;
+    position:absolute;
+    top:0.1rem;
+    right: 0.1rem;
   }
 }
 </style>

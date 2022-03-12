@@ -30,30 +30,30 @@
 
 利用接口获取的信息展示到页面上没什么好说的，要闻用a标签，可以点击查看具体新闻
 
-![image-20220312142157276](https://raw.githubusercontent.com/WBbug/covidnews/main/screenShots/image-20220312142157276.png)
+![image-20220312142157276](https://raw.githubusercontent.com/WBbug/covidnews/main/screenshots/image-20220312142157276.png)
 
 #### 风险地区
 
-![image-20220312142728721](https://raw.githubusercontent.com/WBbug/covidnews/main/screenShots/image-20220312142728721.png)
+![image-20220312142728721](https://raw.githubusercontent.com/WBbug/covidnews/main/screenshots/image-20220312142728721.png)
 
 #### 防疫物资
 
-![image-20220312142749485](https://raw.githubusercontent.com/WBbug/covidnews/main/screenShots/image-20220312142749485.png)
+![image-20220312142749485](https://raw.githubusercontent.com/WBbug/covidnews/main/screenshots/image-20220312142749485.png)
 
 #### 出行政策
 
 使用vant组件库可以选择城市，并获取参数带着参数发请求，将获取到的信息展示出来
 
-![image-20220312142901368](https://raw.githubusercontent.com/WBbug/covidnews/main/screenShots/image-20220312142901368.png)
+![image-20220312142901368](https://raw.githubusercontent.com/WBbug/covidnews/main/screenshots/image-20220312142901368.png)
 
 #### 地图
 
 点击查看具体确诊人数，再次点击标签可以查看具体城市地图，因为接口原因，和echarts配合的不是很好
 
-![image-20220312142341320](https://raw.githubusercontent.com/WBbug/covidnews/main/screenShots/image-20220312142341320.png)
+![image-20220312142341320](https://raw.githubusercontent.com/WBbug/covidnews/main/screenshots/image-20220312142341320.png)
 
 #### 趋势
 
 下方趋势图直接copy丁香园的图hhhh，使用了swiper
 
-![image-20220312142556628](https://raw.githubusercontent.com/WBbug/covidnews/main/screenShots/image-20220312142556628.png)
+![image-20220312142556628](https://raw.githubusercontent.com/WBbug/covidnews/main/screenshots/image-20220312142556628.png)
